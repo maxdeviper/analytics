@@ -1,0 +1,46 @@
+{
+    "name": "maxdeviper/analytics",
+    "type": "library",
+    "description": "package_description",
+    "keywords": [
+        "maxdeviper",
+        "analytics"
+    ],
+    "homepage": "https://github.com/maxdeviper/analytics",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maxdeviper",
+            "email": "mxvmayaki@gmail.com",
+            "homepage": "https://github.com/maxdeviper/analytics",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~7.0",
+        "nesbot/carbon": "^1.21"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maxdeviper\\Analytics\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            ":Maxdeviper\\Analytics\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
